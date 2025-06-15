@@ -25,7 +25,13 @@ relationship: "Friend",
 date: "15, 6, 2025 ; 14:06:30",
 attendance: "attend"
 }
+## License
 
+This project is open-source and free to use.
+
+## Author
+
+Munene Morris
 ---
 
 *Data is stored locally; clearing browser data will erase the list.*
