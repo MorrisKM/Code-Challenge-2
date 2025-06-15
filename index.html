@@ -11,30 +11,40 @@
         <div class="maindiv">
             <div class="formdiv">
                 <form name="form" id="form">
+                    <!--this is the input section-->
                     <fieldset>
-                        <legend>Guest Name</legend>
-                        <input name="name" type="text">
-                        <select name="relationship" id="relationship">
-                            <option value="friend">Friend</option>
-                            <option value="family">Family</option>
-                            <option value="Colleague">Colleague</option>
-                        </select>
-                        <input type="submit" id="submit">
+                        <legend>Guest Info</legend>
+                        <div>
+                            <input name="name" type="text" class="name" placeholder="Name">
+                            <select class="select" name="relationship" id="relationship">
+                                <option value="friend">Friend</option>
+                                <option value="family">Family</option>
+                                <option value="Colleague">Colleague</option>
+                            </select>
+                        </div>
+                            <div><input type="submit" id="submit"></div>
                     </fieldset>
                 </form>
             </div>
             <div class="tablediv">
+                <!--this is the table to be manipulated in js to display guests-->
                 <table id="table">
                     <tr>
-                        <th>Name</th>
-                        <th>Relationship</th>
-                        <th>time</th>
-                        <th>Rsvp</th>
-                        <th>edit</th>
+                        <th style="width: 25%;">Name</th>
+                        <th style="width: 20%;">Relationship</th>
+                        <th style="width: 25%;">Time</th>
+                        <th style="width: 20%;">Rsvp</th>
+                        <th style="width: 10%;">Remove</th>
                     </tr>
                 </table>
             </div>
+            <!--div to log the attending and not attending guests-->
+            <div id="logging">
+                <p id="attending"></p>
+                <p id="notAttending"></p>
+            </div>
         </div>
+        
     </section>
     <script src="./src/index.js"></script>
 </body>
